@@ -68,6 +68,7 @@ BUILD_NAME="ffmpeg-$(./ffbuild/ffmpeg/ffbuild/version.sh ffbuild/ffmpeg)-${TARGE
 mkdir -p "ffbuild/pkgroot/$BUILD_NAME"
 package_variant ffbuild/prefix "ffbuild/pkgroot/$BUILD_NAME"
 
+mkdir -p "ffbuild/pkgroot/$BUILD_NAME/include"
 cp -f "ffbuild/ffmpeg/config.h" "ffbuild/pkgroot/$BUILD_NAME/include/config.h"
 
 cd ffbuild/pkgroot
