@@ -70,7 +70,8 @@ package_variant ffbuild/prefix "ffbuild/pkgroot/$BUILD_NAME"
 
 sudo apt install tree
 sudo tree -d .././
-cp -f "/ffbuild/prefix/config.h" "ffbuild/pkgroot/$BUILD_NAME/include/config.h"
+sudo tree -f .././
+cp -f "ffbuild/ffmpeg/config.h" "ffbuild/pkgroot/$BUILD_NAME/include/config.h"
 
 cd ffbuild/pkgroot
 zip -9 -r "${ARTIFACTS_PATH}/${BUILD_NAME}.zip" "$BUILD_NAME"
