@@ -68,9 +68,9 @@ BUILD_NAME="ffmpeg-$(./ffbuild/ffmpeg/ffbuild/version.sh ffbuild/ffmpeg)-${TARGE
 mkdir -p "ffbuild/pkgroot/$BUILD_NAME"
 package_variant ffbuild/prefix "ffbuild/pkgroot/$BUILD_NAME"
 
-cp -f "/ffbuild/prefix/config.h" "ffbuild/pkgroot/$BUILD_NAME/include/config.h"
 sudo apt install tree
 sudo tree -d /ffbuild
+cp -f "/ffbuild/prefix/config.h" "ffbuild/pkgroot/$BUILD_NAME/include/config.h"
 
 cd ffbuild/pkgroot
 zip -9 -r "${ARTIFACTS_PATH}/${BUILD_NAME}.zip" "$BUILD_NAME"
