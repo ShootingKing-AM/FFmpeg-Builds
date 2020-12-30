@@ -1,4 +1,4 @@
-# FFmpeg Static Auto-Builds
+# [Custom] FFmpeg Static Auto-Builds
 
 Static Windows Builds of ffmpeg master and latest release branch.
 
