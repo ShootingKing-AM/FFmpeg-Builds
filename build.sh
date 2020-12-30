@@ -69,7 +69,7 @@ mkdir -p "ffbuild/pkgroot/$BUILD_NAME"
 package_variant ffbuild/prefix "ffbuild/pkgroot/$BUILD_NAME"
 
 sudo apt install tree
-sudo tree -d /ffbuild
+sudo tree -d .././
 cp -f "/ffbuild/prefix/config.h" "ffbuild/pkgroot/$BUILD_NAME/include/config.h"
 
 cd ffbuild/pkgroot
