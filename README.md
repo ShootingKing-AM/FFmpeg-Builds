@@ -1,4 +1,6 @@
-# [Custom] FFmpeg Static Auto-Builds
+## These builds are same as Master's but, they have additional 'config.h' file in includes for development.
+
+# FFmpeg Static Auto-Builds
 
 Static Windows Builds of ffmpeg master and latest release branch.
 
